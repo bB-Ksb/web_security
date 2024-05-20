@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>게시판</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../asset/computer.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        header {
+            margin-bottom: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        table {
+            margin: auto;
+            width: 700px;
+            border-radius: 5px;
+            border-collapse: collapse;
+            border-top: none;
+            text-align: center;
+        }
+
+        .header {
+            background-color: rgb(218, 231, 255);
+            text-align: center;
+        }
+
+        .table td, .table th {
+            border-bottom: 1px lightgray solid;
+            height: 30px;
+            font-size: 14px;
+        }
+
+        .num {
+            width: 50px;
+        }
+
+        .title {
+            width: 500px;
+        }
+
+        .body .title {
+            text-align: left;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            font-size: 15px;
+            border: 0;
+            outline: 1.5px rgb(68, 136, 244) solid;
+            border-radius: 5px;
+            padding-left: 10px;
+            background-color: rgb(164, 199, 255);
+        }
+
+        button:active {
+            width: 100px;
+            height: 40px;
+            font-size: 15px;
+            border: 0;
+            border-radius: 5px;
+            outline: 1.5px rgb(27, 76, 155) solid;
+            padding-left: 10px;
+            background-color: rgb(68, 136, 244);
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>웹보안 과제</h1>
+    <nav>
+        <a href="https://github.com/bB-Ksb" target="_blank">
+            <i style="font-size:24px" class="fa">&#xf09b;</i>
+        </a>
+    </nav>
+</header>
+<main>
+    <table class="table">
+        <tr>
+            <td colspan="4"><h2>게시판</h2></td>
+        </tr>
+        <tr class="header">
+            <td class="num">번호</td>
+            <td class="title">제목</td>
+            <td>작성자</td>
+            <td>작성날짜</td>
+        </tr>
+        <script>
+            {
+                {
+                    posts
+                }
+            }
+        </script>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <button onclick="location.href='write.html'">글쓰기</button>
+            </td>
+        </tr>
+    </table>
+</main>
+<footer>
+    <p>이메일: blueberrysb@naver.com</p>
+</footer>
+</body>
+</html>
